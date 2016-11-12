@@ -148,7 +148,7 @@ Kupfer &ZT&55,9 ± 0,242 &25,330& 630 &308\\
 \subsection{Experimenteller Aufbau}
 
 \subsection{Durchführung}
-Es wurde 0.4002\;g Silberiodid abgewogen und zu einer Tablette gepresst. Es wurde eine Feststoffkette, wie in Abbildung ... zu sehen ist, aufgebaut und 10\;min mit $\text{N}_2$-Gas umspült. Nach einer Aufheizphase auf 160\;°C hochgeheizt und 45\;min bei einem Strom von 1.2\;mA aufgeladen. Es wurde ab 160\;°C in 5\;°C-Schritten die Spannung gemessen. Ab 175\;°C wurde das Messgerät kurzgeschlossen und die Messung fortgesetzt. 
+Es wurde 0.4002\;g Silberiodid abgewogen und zu einer Tablette gepresst. Es wurde eine Feststoffkette, wie in Abbildung ... zu sehen ist, aufgebaut und 10\;min mit $\text{N}_2$-Gas umspült. Die Feststoffkette wurde auf 160\;°C hochgeheizt und 45\;min bei einem Strom von 1.2\;mA aufgeladen. Es wurde ab 160\;°C in 5\;°C-Schritten die Spannung gemessen. Ab 175\;°C wurde das Messgerät kurzgeschlossen und die Messung fortgesetzt. 
 \section{Auswertung}
 \subsection{Messergebnisse}
 In der Tabelle 2 sind die Messergebnisse der Elektromotorischenkraft dargestellt.
@@ -172,25 +172,88 @@ T/\;K & EMK/\;V &T/\;K & EMK/\;V\\
 \end{tabular} 
 \end{table}
 \FloatBarrier
-\subsection{$\Delta G_R$(T) gegen T}
-Die Elektromotrische Kraft ist gleich dem Standardelektrodenpotential. 
-\begin{equation}
-c_{m,p} = \frac{UI\Delta t}{n\Delta T}
-\end{equation}
+\subsection{$\Delta_R G$(T) gegen T}
+Die freie Reaktionsenergie $\Delta_R G$ lässt sich nach Gl. 1 erechnen:
+\begin{align}
+\Delta_R G &= - z F \Delta E 
+\end{align}
+$\Delta E$ berechnet sich folgendermaßen:
+\begin{align}
+\Delta E &= \Delta E^0 + z\cdot F \cdot \frac{\text{a}(\text{Ag}_2\text{Se})}{\text{a}(\text{Ag})^2\cdot\text{a}(\text{Se})}\\
+\Delta E &= \Delta E^0 + R\cdot T\cdot \text{ln}(\frac{1}{1^2\cdot1})\\
+\Delta E &= \Delta E^0 + RT \cdot \text{ln}(1)\\
+\Delta E &= \Delta E^0 \\
+\end{align}
+Da die Aktivität von Feststoffen 1 ist, fällt der logorithmische Term weg und Die EMK ist gleich dem Standardelektrodenpotential.\\
+Die Werte für $\Delta_R G$ (T) sind in der Tabelle ... dargestellt.
 
 
-
+Der Fehler der freien Reaktionsenthalpie $\Delta(\Delta_R G)$  wird mittels Fehlerfortpflanzung berechnet. Bei den ersten drei Messungen schwankte die Anzeige auf dem Voltometer. Es wurde die Schwankung als Fehler notiert. Ab der veriten Messung konnte die EMK ohne Schwankungen abgelesen werden. Der Fehler wird 0,0005 V:
+\begin{align}
+\Delta(\Delta_R G)= \sqrt{(-z\cdot F \cdot \Delta(\Delta E))^2}
+\end{align}
+\begin{table}[h]
+\centering
+\caption{Fehler für $\Delta_R G$.}
+\begin{tabular}{c|c|c}
+Temperatur/ K & $\Delta(\Delta E)$/ V & $\Delta(\Delta_R G)$/ J \\
+\hline
+458.15 &  0.005 &  0.1  \\
+46315 & 0.003   & 0.06 \\
+468.15 & 0.003  & 0.06 \\
+473.15 & 0.0005& 0.01 \\
+478.15 & 0.0005& 0.01 \\
+483.15 & 0.0005& 0.01 \\
+488.15 & 0.0005& 0.01 \\
+493.15 & 0.0005& 0.01 \\
+498.15 & 0.0005& 0.01 \\
+503.15 & 0.0005& 0.01 \\
+508.15 & 0.0005& 0.01 \\
+513.15 & 0.0005& 0.01 \\
+518.15 & 0.0005& 0.01 \\
+523.15 & 0.0005& 0.01 \\
+528.15 & 0.0005& 0.01 \\
+533.15 & 0.0005& 0.01 \\
+\end{tabular}
+\end{table}
+\FloatBarrier
+\section{$\Delta E$ gegen T}
+Es wurden die Werte für $\Delta E$ und T aus Tabelle~2 mit den Fehlern aus für $\Delta E$ aus Tabelle~3 aufgetragen in Abbildung~1 aufgetragen. Die Temperatur wurde als fehlerfrei angenommen, da diese nach einer langen Aufheizphase durch kleine Temperaturerhöhungen mittels Thermodingsbums eingestellt wurde. Es wurden bei der linearen Regression die ersten drei Messpunkte nicht eingefügt, da sie sehr stark von den folgenden Messwerten abweichen. 
+\begin{figure}[h]
+\includegraphics[width=13.5cm]{EMK_gegen_T.png}
+\caption{$\Delta E$ gegen T.}
+\end{figure} 
+Die negative Ableitung der freien Reaktionsentalpie nach der Temperatur ist gleich der Reaktionsentropie. Durch einsetzen der Gleichung~1 wird die Formel zur Berechnung der Reaktionsentropie erhalten. 
+\begin{align}
+\Delta_R S &= -(\frac{\partial \Delta_R G}{\partial T})\\
+&= z \cdot F \cdot (\frac{\partial \Delta E}{\partial T})\\
+&= z \cdot F \cdot m \\
+\Delta_R S_{\text{m}} &= 2 \cdot 9.6485 \cdot 10^4\;\text{As} \cdot 2.24 \cdot 10^{-4}\;\frac{\text{V}}{\text{K}}\\
+&= 43.3\;\frac{\text{J}}{\text{K}}\\
+\Delta_R  S_{\text{l}} &= 2 \cdot  9.6485 \cdot 10^4\;\text{As} \cdot 1.60 \cdot 10^{-4}\;\frac{\text{V}}{\text{K}}  \\
+&= 30.9\;\frac{\text{J}}{\text{K}}\\
+\end{align}
+Der Fehler der Reaktionsentropie lässt sich mittels Fehlerfortpflanzung berechnen. Der Fehler der Steigung wird hierbei aus dem Auswertungsblatt des Programms $Origin 8.5 G$ entnommen. 
+\begin{align}
+\Delta(\Delta_R  S)&= \sqrt{(z\cdot F \cdot \Delta m)^2}\\
+\Delta(\Delta_R  S_{\text{m}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.04 \cdot 10^{-4}\;\frac{\text{V}}{\text{K}})^2}\\
+&= 0.7 \;\frac{\text{J}}{\text{K}}\\
+\Delta(\Delta_R  S_{\text{l}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.01\cdot 10^{-4}\;\frac{\text{V}}{\text{K}})^2}\\
+&= 0.2\;\frac{\text{J}}{\text{K}}
+\end{align}
+\section{Bestimmung der Reaktionsenthalpie}
+\section{Auftragung nach Vant'Hof}
+\section{Bestimmung der Umwandlungsenthalpie und Umwandlungsentropie}
+\section{Schmelzpunktbestimmung}
+\section{Diskussion}
 \newpage
-
-
-\subsection{Literaturverzeichnis}
+\section{Literaturverzeichnis}
 1\quad Eckhold, Götz: \emph{Praktikum I zur Physikalischen Chemie}, Institut für Physikalische Chemie, Uni Göttingen, \textbf{2014}.
-\vspace{0,5 cm}
 
+\vspace{0,5 cm}
 2 \quad Eckhold, Götz: \emph{Statistische Thermodynamik}, Institut für Physikalische Chemie, Uni Göttingen, \textbf{2012}.
 
 \vspace{0,5cm}
-
 3 \quad Eckhold, Götz: \emph{Chemisches Gleichgewicht}, Institut für Physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 
 \end{document}
