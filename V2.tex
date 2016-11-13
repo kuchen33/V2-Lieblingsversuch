@@ -158,17 +158,17 @@ In der Tabelle 2 sind die Messergebnisse der Elektromotorischenkraft dargestellt
 \begin{tabular}{c|c||c|c}
 T/\;K & EMK/\;V &T/\;K & EMK/\;V\\ 
 \hline
-160 & 0,2889 &   215&0,2860\\ 
-165 & 0,2871& 220&0,2868 \\
-170 & 0,2772 &  225&0,2877\\
-175 & 0,2782& 230& 0,2885\\
-180 &0,2792&235 &0,2893\\
-185& 0,2803 &240&0,2900\\
-190 &0,2814&245 &0,2903\\
-195 &0,2826&250&0,2916\\
-200 &0,2838&255 & 0,2923\\
-205 & 0,2844&260& 0,2933\\
-210& 0,2852&&\\
+433.7 & 0,2889 &   488.15 &0,2860\\ 
+438.5 & 0,2871 & 493.15&0,2868 \\
+443.25 & 0,2772 &  498.15&0,2877\\
+448.15 & 0,2782 & 503.15& 0,2885\\
+453.15 &0,2792 & 508.15 &0,2893\\
+458.15 & 0,2803 & 513.15 &0,2900\\
+463.15 &0,2814 & 518.15 &0,2903\\
+468.15 &0,2826 & 523.15&0,2916\\
+473.15 &0,2838 & 528.15 & 0,2923\\
+478.15 & 0,2844 & 533.15& 0,2933\\
+483.15 & 0,2852 &&\\
 \end{tabular} 
 \end{table}
 \FloatBarrier
@@ -185,9 +185,27 @@ $\Delta E$ berechnet sich folgendermaßen:
 \Delta E &= \Delta E^0 \\
 \end{align}
 Da die Aktivität von Feststoffen 1 ist, fällt der logorithmische Term weg und Die EMK ist gleich dem Standardelektrodenpotential.\\
-Die Werte für $\Delta_R G$ (T) sind in der Tabelle ... dargestellt.
-
-
+Die Werte für $\Delta_R G$ (T) sind in der Tabelle~3 dargestellt.
+\begin{table}[h!]
+\centering
+\caption{Ergebnisse für $\Delta_R G$.}
+\begin{tabular}{c|c||c|c}
+T/\;K & $\Delta_R G$/\;$\frac{\text{kJ}}{\text{mol}}$ &T/\;K & $\Delta_R G$/\;$\frac{\text{kJ}}{\text{mol}}$\\ 
+\hline
+433.7 & -55.75 &488.15 & -55.19 \\ 
+438.5 & -57.33 & 493.15& -55.52 \\
+443.25 & -55.42 &  498.15& -55.67\\
+448.15 & -53.68 & 503.15&  -55.83\\
+453.15 & -53.88 & 508.15 & -55.96\\
+458.15 & -54.09 & 513.15 & -56.12\\
+463.15 & -54.30 & 518.15 & -56.12\\
+468.15 & -54.53 & 523.15& -56.27\\
+473.15 & -54.77 & 528.15 & -56.41\\
+478.15 & -54.88 & 533.15& -56.60\\
+483.15 & -55.04 &&\\
+\end{tabular} 
+\end{table}
+\FloatBarrier
 Der Fehler der freien Reaktionsenthalpie $\Delta(\Delta_R G)$  wird mittels Fehlerfortpflanzung berechnet. Bei den ersten drei Messungen schwankte die Anzeige auf dem Voltometer. Es wurde die Schwankung als Fehler notiert. Ab der veriten Messung konnte die EMK ohne Schwankungen abgelesen werden. Der Fehler wird 0,0005 V:
 \begin{align}
 \Delta(\Delta_R G)= \sqrt{(-z\cdot F \cdot \Delta(\Delta E))^2}
@@ -217,7 +235,7 @@ Temperatur/ K & $\Delta(\Delta E)$/ V & $\Delta(\Delta_R G)$/ J \\
 \end{tabular}
 \end{table}
 \FloatBarrier
-\section{$\Delta E$ gegen T}
+\subsection{$\Delta E$ gegen T}
 Es wurden die Werte für $\Delta E$ und T aus Tabelle~2 mit den Fehlern aus für $\Delta E$ aus Tabelle~3 aufgetragen in Abbildung~1 aufgetragen. Die Temperatur wurde als fehlerfrei angenommen, da diese nach einer langen Aufheizphase durch kleine Temperaturerhöhungen mittels Thermodingsbums eingestellt wurde. Es wurden bei der linearen Regression die ersten drei Messpunkte nicht eingefügt, da sie sehr stark von den folgenden Messwerten abweichen. 
 \begin{figure}[h]
 \includegraphics[width=13.5cm]{EMK_gegen_T.png}
