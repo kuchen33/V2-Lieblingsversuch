@@ -8,8 +8,8 @@
 \contentsline {subsection}{\numberline {2.2}$\Delta _R G$(T) gegen T}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}$\Delta E$ gegen T}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Bestimmung der Reaktionsenthalpie}{7}{subsection.2.4}
-\contentsline {section}{\numberline {3}Auftragung nach Vant'Hof}{8}{section.3}
-\contentsline {section}{\numberline {4}Bestimmung der Umwandlungsenthalpie und Umwandlungsentropie}{8}{section.4}
-\contentsline {section}{\numberline {5}Schmelzpunktbestimmung}{8}{section.5}
-\contentsline {section}{\numberline {6}Diskussion}{9}{section.6}
-\contentsline {section}{\numberline {7}Literaturverzeichnis}{10}{section.7}
+\contentsline {section}{\numberline {3}Auftragung nach Vant'Hoff}{9}{section.3}
+\contentsline {section}{\numberline {4}Bestimmung der Umwandlungsenthalpie und Umwandlungsentropie}{11}{section.4}
+\contentsline {section}{\numberline {5}Schmelzpunktbestimmung}{12}{section.5}
+\contentsline {section}{\numberline {6}Diskussion}{13}{section.6}
+\contentsline {section}{\numberline {7}Literaturverzeichnis}{14}{section.7}
