@@ -206,7 +206,7 @@ T/\;K & $\Delta_R G$/\;$\frac{\text{kJ}}{\text{mol}}$ &T/\;K & $\Delta_R G$/\;$\
 \end{tabular} 
 \end{table}
 \FloatBarrier
-Der Fehler der freien Reaktionsenthalpie $\Delta(\Delta_R G)$  wird mittels Fehlerfortpflanzung berechnet. Bei den ersten drei Messungen schwankte die Anzeige auf dem Voltometer. Es wurde die Schwankung als Fehler notiert. Ab der veriten Messung konnte die EMK ohne Schwankungen abgelesen werden. Der Fehler wird 0,0005 V:
+Der Fehler der freien Reaktionsenthalpie $\Delta(\Delta_R G)$  wird mittels Fehlerfortpflanzung berechnet. Bei den ersten drei Messungen schwankte die Anzeige auf dem Voltometer. Es wurde die Schwankung als Fehler notiert. Ab der vierten Messung konnte die EMK ohne Schwankungen abgelesen werden. Der Fehler wird 0,0005 V:
 \begin{align}
 \Delta(\Delta_R G)= \sqrt{(-z\cdot F \cdot \Delta(\Delta E))^2}
 \end{align}
@@ -214,11 +214,16 @@ Der Fehler der freien Reaktionsenthalpie $\Delta(\Delta_R G)$  wird mittels Fehl
 \centering
 \caption{Fehler für $\Delta_R G$.}
 \begin{tabular}{c|c|c}
-Temperatur/ K & $\Delta(\Delta E)$/ V & $\Delta(\Delta_R G)$/ J \\
+Temperatur/ K & $\Delta(\Delta E)$/ V & $\Delta(\Delta_R G)$/\;$\frac{\text{kJ}}{\text{mol}}$ \\
 \hline
-458.15 &  0.005 &  0.1  \\
-46315 & 0.003   & 0.06 \\
-468.15 & 0.003  & 0.06 \\
+433.7 &  0.005 &  0.1  \\
+438.5 & 0.003   & 0.06 \\
+443.25 & 0.003  & 0.06 \\
+448.15 &  0.0005& 0.01 \\
+453.15 & 0.0005& 0.01 \\
+458.15 &  0.0005& 0.01 \\
+463.15 & 0.0005& 0.01 \\
+468.15 & 0.0005& 0.01 \\
 473.15 & 0.0005& 0.01 \\
 478.15 & 0.0005& 0.01 \\
 483.15 & 0.0005& 0.01 \\
@@ -249,7 +254,7 @@ Die negative Ableitung der freien Reaktionsentalpie nach der Temperatur ist glei
 \Delta_R S_{\text{m}} &= 2 \cdot 9.6485 \cdot 10^4\;\text{As} \cdot 2.24 \cdot 10^{-4}\;\frac{\text{V}}{\text{K}}\\
 &= 43.3\;\frac{\text{J}}{\text{K}}\\
 \Delta_R  S_{\text{l}} &= 2 \cdot  9.6485 \cdot 10^4\;\text{As} \cdot 1.60 \cdot 10^{-4}\;\frac{\text{V}}{\text{K}}  \\
-&= 30.9\;\frac{\text{J}}{\text{K}}\\
+&= 30.9\;\frac{\text{J}}{\text{K}}
 \end{align}
 Der Fehler der Reaktionsentropie lässt sich mittels Fehlerfortpflanzung berechnen. Der Fehler der Steigung wird hierbei aus dem Auswertungsblatt des Programms $Origin 8.5 G$ entnommen. 
 \begin{align}
@@ -259,10 +264,53 @@ Der Fehler der Reaktionsentropie lässt sich mittels Fehlerfortpflanzung berechn
 \Delta(\Delta_R  S_{\text{l}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.01\cdot 10^{-4}\;\frac{\text{V}}{\text{K}})^2}\\
 &= 0.2\;\frac{\text{J}}{\text{K}}
 \end{align}
-\section{Bestimmung der Reaktionsenthalpie}
+\subsection{Bestimmung der Reaktionsenthalpie}
+Aus der Gibbs-Helmholtz-Gleichung ergibt sich die Reaktionsentalpie:
+\begin{align}
+\Delta_R H=& \Delta_R G +\text{T} \cdot \Delta_R S
+\end{align}
+Die Ungenauigkeit lässt sich durch die Fehlerfortpflanzung ermitteln. Es wurde für $\Delta(\Delta_R G)$ die Werte aus Tabelle\;4 und für $\Delta(\Delta_R S)$ die Fehler aus Gl.\;12 oder 14 benutzt:
+\begin{align}
+\Delta(\Delta_R  H)&= \sqrt{(\Delta(\Delta_R G))^2 + (\Delta(\Delta_R S) \cdot \text{T})^2 +(\Delta\text{T} \Delta_R S)^2}\\
+\end{align}
+\begin{table}[h]
+\centering
+\caption{Fehler für $\Delta_R G$.}
+\begin{tabular}{c|c|c|c|c}
+Temperatur/ K & $\Delta$T/ K&Aggregatszustand&$\Delta_R H$/ \;$\frac{\text{kJ}}{\text{mol}}$ & $\Delta(\Delta_R H)$/ \;$\frac{\text{kJ}}{\text{mol}}$ \\
+\hline
+433.7 &  0.05 &  s. & -37.0 & 1.0\\
+438.5 & 0.05   & s. & -38.3 &0.7 \\
+443.25 & 0.1  & s. & -36.2&0.7\\
+448.15 &  0.05& s. &-34.3&0.3\\
+453.15 & 0.05& s. &-34.2&0.3\\
+458.15 & 0.05& s. &-34.2&0.3\\
+463.15 & 0.05& s. &-34.2&0.3\\
+468.15 & 0.05& s. &-34.2&0.3\\
+473.15 & 0.05& l. &-40.2&0.1\\
+478.15 & 0.05& l. &-40.1&0.1\\
+483.15 & 0.05& l. &-40.1&0.1\\
+488.15 & 0.05& l. &-40.1&0.1\\
+493.15 & 0.05& l. &-40.3&0.1\\
+498.15 & 0.05& l. &-40.3&0.1\\
+503.15 & 0.05& l. &-40.3&0.1\\
+508.15 & 0.05& l. &-40.3&0.1\\
+513.15 & 0.05& l. &-40.3&0.1\\
+518.15 & 0.05& l. &-40.1&0.1\\
+523.15 & 0.05& l. &-40.1&0.1\\
+528.15 & 0.05& l. &-40.1&0.1\\
+533.15 & 0.05& l. &-40.1&0.1\\
+\end{tabular}
+\end{table}
+\FloatBarrier
+Noch mit y-abschnitt
 \section{Auftragung nach Vant'Hof}
 \section{Bestimmung der Umwandlungsenthalpie und Umwandlungsentropie}
+Einfach Differenz von den Werten 
 \section{Schmelzpunktbestimmung}
+Grafisch siehe Schnittpunkt
+und rechnerisch :
+
 \section{Diskussion}
 \newpage
 \section{Literaturverzeichnis}
