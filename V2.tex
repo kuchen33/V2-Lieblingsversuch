@@ -252,17 +252,17 @@ Die negative Ableitung der freien Reaktionsentalpie nach der Temperatur ist glei
 \Delta_R S &= -(\frac{\partial \Delta_R G}{\partial T})\\
 &= z \cdot F \cdot (\frac{\partial \Delta E}{\partial T})\\
 &= z \cdot F \cdot m \\
-\Delta_R S_{\text{m}} &= 2 \cdot 9.6485 \cdot 10^4\;\text{As} \cdot 2.24 \cdot 10^{-4}\;\frac{\text{V}}{\text{K}}\\
+\Delta_R S_{\text{s}} &= 2 \cdot 9.6485 \cdot 10^4\;\text{As} \cdot 2.24 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}}\\
 &= 43.3\;\frac{\text{J}}{\text{K}}\\
-\Delta_R  S_{\text{l}} &= 2 \cdot  9.6485 \cdot 10^4\;\text{As} \cdot 1.60 \cdot 10^{-4}\;\frac{\text{V}}{\text{K}}  \\
+\Delta_R  S_{\text{l}} &= 2 \cdot  9.6485 \cdot 10^4\;\text{As} \cdot 1.60 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}}  \\
 &= 30.9\;\frac{\text{J}}{\text{K}}
 \end{align}
 Der Fehler der Reaktionsentropie lässt sich mittels Fehlerfortpflanzung berechnen. Der Fehler der Steigung wird hierbei aus dem Auswertungsblatt des Programms $Origin 8.5 G$ entnommen. 
 \begin{align}
 \Delta(\Delta_R  S)&= \sqrt{(z\cdot F \cdot \Delta m)^2}\\
-\Delta(\Delta_R  S_{\text{m}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.04 \cdot 10^{-4}\;\frac{\text{V}}{\text{K}})^2}\\
+\Delta(\Delta_R  S_{\text{s}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.04 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}})^2}\\
 &= 0.7 \;\frac{\text{J}}{\text{K}}\\
-\Delta(\Delta_R  S_{\text{l}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.01\cdot 10^{-4}\;\frac{\text{V}}{\text{K}})^2}\\
+\Delta(\Delta_R  S_{\text{l}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.01\cdot 10^{-4}\;\frac{\text{J}}{\text{K}})^2}\\
 &= 0.2\;\frac{\text{J}}{\text{K}}
 \end{align}
 \subsection{Bestimmung der Reaktionsenthalpie}
@@ -421,9 +421,48 @@ y-Ab&475.8 & 34.5\\
 \FloatBarrier
 Die Schmelztemperatur kann auch aus der Auftragung EMK gegen T bestimmt werden. Am Schnittpunkt, den die Geraden bilden, wird der x-Achsenwert abgelesen. Der Ablesefehler wird aufgrund der breiten Überschneidung auf 10\;K geschätzt:
 \begin{align}
-\text{T}_{\text{m}}&= 471.9 \pm 10\;\text{K}
+\text{T}_{\text{m}}^{\text{Graph}}&= 471.9 \pm 10\;\text{K}
 \end{align}
 \section{Diskussion}
+\begin{table}[h!]
+\centering
+\caption{Ergebnisse des Versuchs.}
+\begin{tabular}{l|c|c|c}
+Messgröße& Ergebniss&Literaturwert\\
+\hline
+$\Delta_R S_{\text{l}}$&30.9 ± 0.2\;$\frac{\text{J}}{\text{K}}$&\\
+\hline
+$\Delta_R S_{\text{s}}$&43.3 ± 0.7\;$\frac{\text{J}}{\text{K}}$&\\
+\hline
+$\Delta_U S_{\text{s}\rightarrow\text{l}}$&-12.4 ± 0.9\;$\frac{\text{J}}{\text{K}}$&\\
+\hline
+$\Delta_R H_{\text{l}}^{\text{RECH}}$&-40.2 ± 0.2\;$\frac{\text{kJ}}{\text{mol}}$&\\
+\hline
+$\Delta_R H_{\text{s}}^{\text{RECH}}$&-35.3 ± 0.5\;$\frac{\text{kJ}}{\text{mol}}$&\\
+\hline
+$\Delta_R H_{\text{l}}^{\text{y-Ab}}$&-34.2 ± 0.1\;$\frac{\text{kJ}}{\text{mol}}$&\\
+\hline
+$\Delta_R H_{\text{s}}^{\text{y-Ab}}$&-40.1 ± 0.4\;$\frac{\text{kJ}}{\text{mol}}$&\\
+\hline
+$\Delta_R H_{\text{l}}^{\text{Vant}}$&&\\
+\hline
+$\Delta_R H_{\text{s}}^{\text{Vant}}$&&\\
+\hline
+$\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{RECH}}$&-4.7 ± 0.7\;$\frac{\text{kJ}}{\text{mol}}$&\\
+\hline
+$\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{y-Ab}}$&-5.9 ± 0.5\;$\frac{\text{kJ}}{\text{mol}}$&\\
+\hline
+$\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{Vant}}$&&\\
+\hline
+$\text{T}_{\text{m}}^{\text{RECH}}$&379.0 ± 27.5\;K&\\
+\hline
+$\text{T}_{\text{m}}^{\text{y-Ab}}$&475.9 ± 34.5\;K&\\
+\hline
+$\text{T}_{\text{m}}^{\text{Vant}}$&&\\
+\hline
+$\text{T}_{\text{m}}^{\text{Graph}}$&471 ± 10\;K&\\
+\end{tabular}
+\end{table}
 \newpage
 \section{Literaturverzeichnis}
 1\quad Eckhold, Götz: \emph{Praktikum I zur Physikalischen Chemie}, Institut für Physikalische Chemie, Uni Göttingen, \textbf{2014}.
