@@ -126,14 +126,13 @@ Assistent: & Sven Meyer \\
 \begin{table}[h!]
 \centering
 \caption{Ergebnisse des Versuchs.}
-\begin{tabular}{c|c|c|c||c|c}
-Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] &$\text{c}_P^{\text{Lit.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] & $<\Theta_D >$ [K]& $<\Theta_{D,Lit.}>$ [K] \\
+\begin{tabular}{l|c|c}
+Messgröße& Ergebniss&Literaturwert\\
 \hline
-Graphit& ZT&4,52 ± 0,053  &8,517& 138$ \cdot 10^2$& 2500950\\
-\hline
-Zink &ZT& 51,7 ± 0,260 &24,47& 981 & 345\\
-\hline
-Kupfer &ZT&55,9 ± 0,242 &25,330& 630 &308\\
+$\text{T}_{\text{m}}^{\text{RECH}}$&379.0 ± 27.5\;K&493.65\;K\\
+$\text{T}_{\text{m}}^{\text{y-Ab}}$&475.9 ± 34.5\;K&\\
+$\text{T}_{\text{m}}^{\text{Vant}}$&491.9 ± 35.7\;K&\\
+$\text{T}_{\text{m}}^{\text{Graph}}$&471 ± 10\;K&\\
 \end{tabular}
 \end{table}
 \end{titlepage}
@@ -146,9 +145,14 @@ Kupfer &ZT&55,9 ± 0,242 &25,330& 630 &308\\
 
 \section{Experimentelles}
 \subsection{Experimenteller Aufbau}
-
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{VB.png}
+\caption{Der Versuchsaufbau.}
+\end{figure} 
+\FloatBarrier
 \subsection{Durchführung}
-Es wurde 0.4002\;g Silberiodid abgewogen und zu einer Tablette gepresst. Es wurde eine Feststoffkette, wie in Abbildung ... zu sehen ist, aufgebaut und 10\;min mit $\text{N}_2$-Gas umspült. Die Feststoffkette wurde auf 160\;°C hochgeheizt und 45\;min bei einem Strom von 1.2\;mA aufgeladen. Es wurde ab 160\;°C in 5\;°C-Schritten die Spannung gemessen. Ab 175\;°C wurde das Messgerät kurzgeschlossen und die Messung fortgesetzt. 
+Es wurde 0.4002\;g Silberiodid abgewogen und zu einer Tablette gepresst. Es wurde eine Feststoffkette, wie in Abbildung 1 zu sehen ist, aufgebaut und 10\;min mit $\text{N}_2$-Gas umspült. Die Feststoffkette wurde auf 160\;°C hochgeheizt und 45\;min bei einem Strom von 1.2\;mA aufgeladen. Es wurde ab 160\;°C in 5\;°C-Schritten die Spannung gemessen. Ab 175\;°C wurde das Messgerät kurzgeschlossen und die Messung fortgesetzt. 
 \section{Auswertung}
 \subsection{Messergebnisse}
 In der Tabelle 2 sind die Messergebnisse der Elektromotorischenkraft dargestellt.
@@ -241,7 +245,7 @@ Temperatur/ K & $\Delta(\Delta E)$/ V & $\Delta(\Delta_R G)$/\;$\frac{\text{kJ}}
 \end{table}
 \FloatBarrier
 \subsection{$\Delta E$ gegen T}
-Es wurden die Werte für $\Delta E$ und T aus Tabelle~2 mit den Fehlern aus für $\Delta E$ aus Tabelle~3 aufgetragen in Abbildung~1 aufgetragen. Die Temperatur wurde als fehlerfrei angenommen, da diese nach einer langen Aufheizphase durch kleine Temperaturerhöhungen mittels Thermodingsbums eingestellt wurde. Es wurden bei der linearen Regression die ersten drei Messpunkte nicht eingefügt, da sie sehr stark von den folgenden Messwerten abweichen. 
+Es wurden die Werte für $\Delta E$ und T aus Tabelle~2 mit den Fehlern aus für $\Delta E$ aus Tabelle~3 aufgetragen in Abbildung~2 aufgetragen. Die Temperatur wurde als fehlerfrei angenommen, da diese nach einer langen Aufheizphase durch kleine Temperaturerhöhungen mittels Thermodingsbums eingestellt wurde. Es wurden bei der linearen Regression die ersten drei Messpunkte nicht eingefügt, da sie sehr stark von den folgenden Messwerten abweichen. 
 \begin{figure}[h]
 \includegraphics[width=13.5cm]{EMK_gegen_T.png}
 \caption{$\Delta E$ gegen T.}
@@ -252,18 +256,18 @@ Die negative Ableitung der freien Reaktionsentalpie nach der Temperatur ist glei
 \Delta_R S &= -(\frac{\partial \Delta_R G}{\partial T})\\
 &= z \cdot F \cdot (\frac{\partial \Delta E}{\partial T})\\
 &= z \cdot F \cdot m \\
-\Delta_R S_{\text{s}} &= 2 \cdot 9.6485 \cdot 10^4\;\text{As} \cdot 2.24 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}}\\
-&= 43.3\;\frac{\text{J}}{\text{K}}\\
-\Delta_R  S_{\text{l}} &= 2 \cdot  9.6485 \cdot 10^4\;\text{As} \cdot 1.60 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}}  \\
-&= 30.9\;\frac{\text{J}}{\text{K}}
+\Delta_R S_{\text{s}} &= 2 \cdot 9.6485 \cdot 10^4\;\text{As} \cdot 2.24 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}\cdot\text{mol}}\\
+&= 43.3\;\frac{\text{J}}{\text{K}\cdot\text{mol}}\\
+\Delta_R  S_{\text{l}} &= 2 \cdot  9.6485 \cdot 10^4\;\text{As} \cdot 1.60 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}\cdot\text{mol}}  \\
+&= 30.9\;\frac{\text{J}}{\text{K}\cdot\text{mol}}
 \end{align}
 Der Fehler der Reaktionsentropie lässt sich mittels Fehlerfortpflanzung berechnen. Der Fehler der Steigung wird hierbei aus dem Auswertungsblatt des Programms $Origin 8.5 G$ entnommen. 
 \begin{align}
 \Delta(\Delta_R  S)&= \sqrt{(z\cdot F \cdot \Delta m)^2}\\
-\Delta(\Delta_R  S_{\text{s}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.04 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}})^2}\\
-&= 0.7 \;\frac{\text{J}}{\text{K}}\\
-\Delta(\Delta_R  S_{\text{l}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.01\cdot 10^{-4}\;\frac{\text{J}}{\text{K}})^2}\\
-&= 0.2\;\frac{\text{J}}{\text{K}}
+\Delta(\Delta_R  S_{\text{s}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.04 \cdot 10^{-4}\;\frac{\text{J}}{\text{K}\cdot\text{mol}})^2}\\
+&= 0.7 \;\frac{\text{J}}{\text{K}\cdot\text{mol}}\\
+\Delta(\Delta_R  S_{\text{l}})&= \sqrt{(2\cdot 9.6485 \cdot 10^4\;\text{As} \cdot 0.01\cdot 10^{-4}\;\frac{\text{J}}{\text{K}\cdot\text{mol}})^2}\\
+&= 0.2\;\frac{\text{J}}{\text{K}\cdot\text{mol}}
 \end{align}
 \subsection{Bestimmung der Reaktionsenthalpie}
 Aus der Gibbs-Helmholtz-Gleichung ergibt sich die Reaktionsentalpie:
@@ -337,12 +341,13 @@ In Gl.\;28 wird Gl.\;1 eingesetzt und der natürliche Logorithmus gezogen:
 \text{K}&=e^{\frac{-zF\Delta E}{RT}}\\
 \text{ln(K)}&=\frac{-zF\Delta E}{RT}
 \end{align}
-Die Reaktionsenthalpie kann durch die Vant'Hoff Gleichung aus der Steigung ermittelt werden. Die Wert der aufgetragenen Punkte sind in Tabelle\;6 aufgelistet. Die Steigung wurde aus der Abbildung\;2 abgelesen
+Die Reaktionsenthalpie kann durch die Vant'Hoff Gleichung aus der Steigung ermittelt werden. Die Wert der aufgetragenen Punkte sind in Tabelle\;6 aufgelistet. Die Steigung wurde aus der Abbildung\;3 abgelesen
 \begin{align}
 \Bigl(\frac{\text{K}}{\text{T}^{-1}}\Bigr)_p&=\frac{-\Delta_R H}{R}\\
 \Delta_R H&=- \Bigl(\frac{\text{K}}{\text{T}^{-1}}\Bigr)_p\cdot R\\
-\Delta_R H_{\text{s}}&=\\
-\Delta_R H_{\text{l}}&=\\
+\Delta_R H&=- m_x\cdot R\\
+\Delta_R H_{\text{s}}&=-40.4\;\frac{\text{kJ}}{\text{mol}}\\
+\Delta_R H_{\text{l}}&=-34.3\;\frac{\text{kJ}}{\text{mol}}\\
 \end{align}
 \begin{table}[h]
 \centering
@@ -375,15 +380,15 @@ $\frac{1}{\text{T}}$/ $10^{-3}\frac{1}{\text{K}}$ &Aggregatszustand& ln(K) \\
 \end{table}
 \FloatBarrier
 \begin{figure}[h]
-\includegraphics[width=13.5cm]{Van't_HoffNeu.png}
+\includegraphics[width=13.5cm]{Van'tHoffAnalogzuEMK.png}
 \caption{Auftragung nach Van't Hoff.}
 \end{figure} 
 \FloatBarrier
 Die Ungenauigkeit der Reaktionsenthalpie lässt sich mittels Fehlerfortpflanzung ermitteln. Der Fehler der Steigung wurde aus aus dem Analysdatenblatt der Auftragung entnommen:
 \begin{align}
 \Delta(\Delta_R H) &= \sqrt{(R\cdot\Delta m)^2}\\
-\Delta(\Delta_R H_{\text{s}}) &= \sqrt{(R\cdot\Delta m_{\text{s}})^2}\\
-\Delta(\Delta_R H_{\text{l}}) &= \sqrt{(R\cdot\Delta m_{\text{l}})^2}
+\Delta(\Delta_R H_{\text{s}}) &= 0.8\;\frac{\text{kJ}}{\text{mol}}\\
+\Delta(\Delta_R H_{\text{l}}) &= 0.4\;\frac{\text{kJ}}{\text{mol}}
 \end{align}
 \section{Bestimmung der Umwandlungsenthalpie und Umwandlungsentropie}
 Die Umwandungsenthalpie wird aus der Differenz zwischen der Reaktionsenthalpie der festen und der flüssigen Phase bestimmt. Hierbei wird die Unwandlungsenthalpie aus dem Mittelwert der rechenerischen Werte aus Tabelle\;5 ($\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{RECH}}$) und die Umwandlungsenthalpie aus den y-Abschnitten-Rechnungen Gl.\;26 und 27 ($\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{y-Ab}}$) berechnet. Die Ungenauigkeit wurde durch Summe der Ungenauigkeit der Reaktionenthalpie in der flüssigen und festen Phase bestimmt:
@@ -391,12 +396,14 @@ Die Umwandungsenthalpie wird aus der Differenz zwischen der Reaktionsenthalpie d
 \Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{RECH}}=&  -40.2\;\frac{\text{kJ}}{\text{mol}} - \Bigl(-35.3\;\frac{\text{kJ}}{\text{mol}}\Bigr) \pm \Bigl((0.2+0.5)\;\frac{\text{kJ}}{\text{mol}}\Bigr)\\
 \Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{RECH}}=& -4.7\pm 0.7 \;\frac{\text{kJ}}{\text{mol}}\\
 \Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{y-Ab}}=&  -40.1\;\frac{\text{kJ}}{\text{mol}} - \Bigl(-34.2\;\frac{\text{kJ}}{\text{mol}}\Bigr) \pm \Bigl((0.4+0.1)\;\frac{\text{kJ}}{\text{mol}}\Bigr)\\
-\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{y-Ab}}=& -5.9 \pm 0.5 \;\frac{\text{kJ}}{\text{mol}}
+\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{y-Ab}}=& -5.9 \pm 0.5 \;\frac{\text{kJ}}{\text{mol}}\\
+\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{Vant}}=&  -40.4\;\frac{\text{kJ}}{\text{mol}} - \Bigl(-34.3\;\frac{\text{kJ}}{\text{mol}}\Bigr) \pm \Bigl((0.8+0.4)\;\frac{\text{kJ}}{\text{mol}}\Bigr)\\
+\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{Vant}}=& -6.1 \pm 1.2 \;\frac{\text{kJ}}{\text{mol}}
 \end{align}
 Die Umwandlungsentropie berechnet sich ähnlich der Umwandlungsenthaplie aus der Different der Reaktionsentropien der festen und flüssigen Phase. Die Fehler wurden auch zu Größtfehlern summiert. Es wurden die Werte aus den Gleichungen\;12, 14, 17 und 19 genutzt:
 \begin{align}
-\Delta_U S_{\text{s}\rightarrow\text{l}}=&  30.9\;\frac{\text{J}}{\text{K}} - 43.3\;\frac{\text{J}}{\text{K}} \pm \Bigl((0.7+0.2)\;\frac{\text{J}}{\text{K}}\Bigr)\\
-\Delta_U S_{\text{s}\rightarrow\text{l}}=& -12.4\pm0.9 \;\frac{\text{J}}{\text{K}}
+\Delta_U S_{\text{s}\rightarrow\text{l}}=&  30.9\;\frac{\text{J}}{\text{K}\cdot\text{mol}} - 43.3\;\frac{\text{J}}{\text{K}\cdot\text{mol}} \pm \Bigl((0.7+0.2)\;\frac{\text{J}}{\text{K}\cdot\text{mol}}\Bigr)\\
+\Delta_U S_{\text{s}\rightarrow\text{l}}=& -12.4\pm0.9 \;\frac{\text{J}}{\text{K}\cdot\text{mol}}
 \end{align}
 \section{Schmelzpunktbestimmung}
 Ist das System im Phasengleichgewicht ist die freie Reaktionsenthalpie gleich 0. Die Gibbs-Hemlholzgleichung (Gl.\;20) wird kann nach T umgestellt werden. Um die Schmelztemperatur bestimmen zu können wird der Quotient aus der Umwandlungsenthalpie und der Umwandlungsenthropie aufgestellt:
@@ -416,6 +423,7 @@ Methode & $\text{T}_{\text{m}}$/ K& $\Delta\text{T}_{\text{m}}$/ K \\
 \hline
 RECH &379.0 &27.5 \\
 y-Ab&475.8 & 34.5\\
+Vant&491.9 & 35.7\\
 \end{tabular}
 \end{table}
 \FloatBarrier
@@ -427,52 +435,40 @@ Die Schmelztemperatur kann auch aus der Auftragung EMK gegen T bestimmt werden. 
 \begin{table}[h!]
 \centering
 \caption{Ergebnisse des Versuchs.}
-\begin{tabular}{l|c|c|c}
+\begin{tabular}{l|c|c}
 Messgröße& Ergebniss&Literaturwert\\
 \hline
-$\Delta_R S_{\text{l}}$&30.9 ± 0.2\;$\frac{\text{J}}{\text{K}}$&\\
+$\Delta_R S_{\text{l}}$&30.9 ± 0.2\;$\frac{\text{J}}{\text{K}\cdot\text{mol}}$&??? \;$\frac{\text{kJ}}{\text{K}\cdot\text{mol}}$\\
 \hline
-$\Delta_R S_{\text{s}}$&43.3 ± 0.7\;$\frac{\text{J}}{\text{K}}$&\\
+\text{}\text{}\text{}$\Delta_R S_{\text{s}}$&43.3 ± 0.7\;$\frac{\text{J}}{\text{K}\cdot\text{mol}}$&??? \;$\frac{\text{kJ}}{\text{mol}}$\\
 \hline
-$\Delta_U S_{\text{s}\rightarrow\text{l}}$&-12.4 ± 0.9\;$\frac{\text{J}}{\text{K}}$&\\
+$\Delta_U S_{\text{s}\rightarrow\text{l}}$&-12.4 ± 0.9\;$\frac{\text{J}}{\text{K}\cdot\text{mol}}$&??? \;$\frac{\text{kJ}}{\text{mol}}$\\
 \hline
-$\Delta_R H_{\text{l}}^{\text{RECH}}$&-40.2 ± 0.2\;$\frac{\text{kJ}}{\text{mol}}$&\\
-\hline
-$\Delta_R H_{\text{s}}^{\text{RECH}}$&-35.3 ± 0.5\;$\frac{\text{kJ}}{\text{mol}}$&\\
-\hline
+$\Delta_R H_{\text{l}}^{\text{RECH}}$&-40.2 ± 0.2\;$\frac{\text{kJ}}{\text{mol}}$&??? \;$\frac{\text{kJ}}{\text{mol}}$\\
 $\Delta_R H_{\text{l}}^{\text{y-Ab}}$&-34.2 ± 0.1\;$\frac{\text{kJ}}{\text{mol}}$&\\
+$\Delta_R H_{\text{l}}^{\text{Vant}}$&-34.3 ± 0.4\;$\frac{\text{kJ}}{\text{mol}}$&\\
 \hline
+$\Delta_R H_{\text{s}}^{\text{RECH}}$&-35.3 ± 0.5\;$\frac{\text{kJ}}{\text{mol}}$&??? \;$\frac{\text{kJ}}{\text{mol}}$\\
 $\Delta_R H_{\text{s}}^{\text{y-Ab}}$&-40.1 ± 0.4\;$\frac{\text{kJ}}{\text{mol}}$&\\
+$\Delta_R H_{\text{s}}^{\text{Vant}}$&-40.4 ± 0.8\;$\frac{\text{kJ}}{\text{mol}}$&\\
 \hline
-$\Delta_R H_{\text{l}}^{\text{Vant}}$&&\\
-\hline
-$\Delta_R H_{\text{s}}^{\text{Vant}}$&&\\
-\hline
-$\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{RECH}}$&-4.7 ± 0.7\;$\frac{\text{kJ}}{\text{mol}}$&\\
-\hline
+$\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{RECH}}$&-4.7 ± 0.7\;$\frac{\text{kJ}}{\text{mol}}$&??? \;$\frac{\text{kJ}}{\text{mol}}$\\
 $\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{y-Ab}}$&-5.9 ± 0.5\;$\frac{\text{kJ}}{\text{mol}}$&\\
+$\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{Vant}}$&6.1 ± 1.2\;$\frac{\text{kJ}}{\text{mol}}$&\\
 \hline
-$\Delta_U H_{\text{s}\rightarrow\text{l}}^{\text{Vant}}$&&\\
-\hline
-$\text{T}_{\text{m}}^{\text{RECH}}$&379.0 ± 27.5\;K&\\
-\hline
+$\text{T}_{\text{m}}^{\text{RECH}}$&379.0 ± 27.5\;K&493.65\;K\\
 $\text{T}_{\text{m}}^{\text{y-Ab}}$&475.9 ± 34.5\;K&\\
-\hline
-$\text{T}_{\text{m}}^{\text{Vant}}$&&\\
-\hline
+$\text{T}_{\text{m}}^{\text{Vant}}$&491.9 ± 35.7\;K&\\
 $\text{T}_{\text{m}}^{\text{Graph}}$&471 ± 10\;K&\\
 \end{tabular}
 \end{table}
+Es wurden keine Literaturwerte für die Reaktionsentropie, -enthalpie und Umwandlungsenthalpie gefunden. Sie könnten mittels Standardbildungsenthalpiewerten beziehungsweise Standardbildungsentropiewerten über den Satz von Heß berechnet werden. Die Umwandlungsenthalpie/entropie würden ähnlich der Gl.\;46 und 52 bestimmt werden. Es fehlen jedoch die Werte des Silber(I)selenids und des Selens im flüssigen Aggregatzustand. Aus diesem Grund werden nur die Messergebnisse der Schmelztemperatur diskutiert.\\
+Die ermittelten Schmelztemperaturen sind alle bis auf $\text{T}_{\text{m}}^{\text{RECH}}$ dem Literaturwert nahe. Die Schmelztemperatur $\text{T}_{\text{m}}^{\text{RECH}}$ liegt unter dem Literaturwert. Ursache hierfür könnte die ersten 3 Messungen sein. Hier sind die bestimmten Reaktionsenthalpien im Vergleich zu den übrigen Messungen 2-4\;$\frac{\text{kJ}}{\text{mol}}$ größer. Die nachfolgenden Messungen schwanken um 0.1\;$\frac{\text{kJ}}{\text{mol}}$, was einen systematischen Fehler bei den ersten 3 Messungen vermuten lässt. Da die Reaktionsentropie ohne die 3 ersten Messungen bestimmt wurde, wird die Abweichung auf die freie Reaktionsenthalpie zurückgeführt. Hier führt eine zu groß bestimmte EMK zu einem höheren Betrag an freier Reaktionsenthalpie führen. Die Messung könnte durch das noch angeschlossen Ladegerät, welches ab der vierten Messung entfernt wurde, verfälscht worden sein.
 \newpage
 \section{Literaturverzeichnis}
-1\quad Eckhold, Götz: \emph{Praktikum I zur Physikalischen Chemie}, Institut für Physikalische Chemie, Uni Göttingen, \textbf{2014}.
+1\quad Lide, D.R.:\textit{CRC Handbook of Chemistry and Physics}, CRC Press LLC, Boca 84. edition, S.4-312, \textbf{2003}.
 
 \vspace{0,5 cm}
-2 \quad Eckhold, Götz: \emph{Statistische Thermodynamik}, Institut für Physikalische Chemie, Uni Göttingen, \textbf{2012}.
-
-\vspace{0,5cm}
-3 \quad Eckhold, Götz: \emph{Chemisches Gleichgewicht}, Institut für Physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
-
 \end{document}
 
 
